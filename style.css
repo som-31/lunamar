@@ -8,7 +8,7 @@
 {
     height: 100%;
 	width: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/bg-2.jpg);
+	/* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/bg-2.jpg); */
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -16,7 +16,7 @@
 }
 .navbar
 {
-    background-color:purple;
+background-color: #002d62	;
    color:rgb(102, 0, 128);
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@ a
 	height:480px;
 	position:relative;
 	margin:2% auto;
-	background:rgba(0,0,0,0.3);
+	background: lightyellow;
 	padding:10px;
     overflow: hidden;
 }
@@ -109,7 +109,7 @@ a
 	position: absolute;
 	width: 110px;
 	height: 100%;
-	background: #F3C693;
+	background: darkorange;
 	border-radius: 30px;
 	transition: .5s;
 }
@@ -135,7 +135,7 @@ a
 	border-left:0;
 	border-top:0;
 	border-right:0;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid black;
 	outline:none;
 	background: transparent;
 }
@@ -146,7 +146,7 @@ a
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: #F3C693;
+	background: darkorange;
 	border: 0;
 	outline: none;
 	border-radius: 30px;
@@ -157,7 +157,7 @@ a
 }
 span
 {
-	color:#777;
+	color: white;
 	font-size:12px;
 	bottom:68px;
 	position:absolute;
