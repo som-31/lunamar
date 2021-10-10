@@ -4,6 +4,117 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+	background-color:white;
+	font-size: 18px
+	height: 100%;
+	width: 100%;
+}
+
+
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+    padding: 20px 100px;
+	
+}
+
+
+.contact-box{
+	max-width: 700px;
+	display: grid;
+	width:500px;
+	height:600px;
+	position:relative;
+	margin:2% auto;
+	background: lightyellow;
+	padding:10px;
+    overflow: hidden;
+	background-color: lightyellow;
+	
+}
+
+
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color:lightyellow;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+	font-family: sans-serif;
+
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: darkorange;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .full-page
 {
     height: 100%;
@@ -157,7 +268,7 @@ a
 }
 span
 {
-	color: white;
+	color:black;
 	font-size:12px;
 	bottom:68px;
 	position:absolute;
@@ -168,7 +279,7 @@ span
 }
 #login input
 {
-	color:white;
+	/* color:white; */
 	font-size:15;
 }
 #register
@@ -177,6 +288,6 @@ span
 }
 #register input
 {
-	color:white;
+	/* color:white; */
 	font-size: 15;
 }
