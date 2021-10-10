@@ -180,3 +180,31 @@ span
 	color:white;
 	font-size: 15;
 }
+
+.service-sub-block{
+    background-color: purple;
+    width: 30%;    
+    float:left;
+    margin:10px;
+    border-radius:5px;
+}
+.service-sub-block-header{
+    padding: 10px;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+}
+.service-sub-block-text{
+	padding: 10px;
+	background-color:rgb(211, 191, 191);
+    font-weight:bold;
+    text-align:center;
+}
+#admin-button{
+    float: center;
+
+}
+.manager-button{
+    width: 20em;  height: 2em;
+
+}
