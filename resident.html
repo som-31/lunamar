@@ -18,14 +18,13 @@
             </div>
             <nav>
                 <ul id='MenuItems'>
-                    <li><a href='home.html'>Home</a></li>
-                    <li><a href='aboutus.html'>About Us</a></li>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
                     <li><a href='service.html '>Services</a></li>
                     <li><a href='contact.html'>Contact</a></li>
-                    <li><a href='login.html'>Login</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                            style="width:auto;">Login</button></li>
                     <li><a href='employee.html'>Employee</a></li>
-                    <!-- <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
-                    <li><a href='employee.html'>Employee</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -34,20 +33,11 @@
             <!-- 1 background image for the below heading Services -->
             <!-- 2 Content for each of the service -->
             <h1 style="text-align:center;">
-                Welcome, {{Manager Name}}
+                Welcome, {{Resident Name}}
             </h1>
         </div>
 
-        <div id='service-form' class='service-page'>
-            <div class="service-sub-block">
-                <div class="service-sub-block-header"><a href='manage-building.html'>Manage Building</a></div>
-            </div>
-        </div>
-        <div id='service-form' class='service-page'>
-            <div class="service-sub-block">
-                <div class="service-sub-block-header"><a href='manage-resident.html'>Manage Resident</a></div>
-            </div>
-        </div>
+      
         <div id='service-form' class='service-page'>
             <div class="service-sub-block">
                 <div class="service-sub-block-header"> <a href='manage-service.html'>Manage Service</a></div>
@@ -60,7 +50,17 @@
         </div>
         <div id='service-form' class='service-page'>
             <div class="service-sub-block">
-                <div class="service-sub-block-header"><a href='manage-amenities.html'>Manage Amenities</a></div>
+                <div class="service-sub-block-header"><a href=''>Upload Picture and Videos </a></div>
+            </div>
+        </div>
+        <div id='service-form' class='service-page'>
+            <div class="service-sub-block">
+                <div class="service-sub-block-header"><a href='manage-service.html'>Add/Remove services</a></div>
+            </div>
+        </div>
+        <div id='service-form' class='service-page'>
+            <div class="service-sub-block">
+                <div class="service-sub-block-header"><a href=''>Chat with Management/Visitor</a></div>
             </div>
         </div>
 
