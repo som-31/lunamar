@@ -40,15 +40,41 @@
    <!-- <h2></h2> -->
    <div class="login-registering">
       <center>
-          <h1>Manage Buildings</h1>
+          <h1>Manage Gardens</h1>
           <!-- <p>Login to see your dashboard.</p> -->
       </center>
    </div>
 <form id='register' class='input-group-register'>
-   <input type='text'class='input-field'placeholder='Name' required>
-   <input type="number" class='input-field' placeholder='Floors' required>
-   <input type='number'class='input-field'placeholder='Total Apartments' required>
-   <input type="number" class="input-field" placeholder="Occupancy" required>
+   <input type='text'class='input-field'placeholder='Garden Name' required>
+    <br>
+    <br>
+    <p>Opening Hours</p>
+    <input type="time" class='input-field' required name="" id="opening_hours">
+    <br>
+    <br>
+    <label for="closing_hours">Closing Hours</label>
+    <input type="time" class='input-field' required name="" id="closing_hours">
+    <br>
+    <br>
+    <label for="gardener">Select Gardener</label>
+    <select name="gardener" id="gardener">
+        <option value="">Select</option>
+        <option value="">Michael Kors</option>
+        <option value="">Rohit padwal</option>
+        <option value="">Sayali Deshmukh</option>
+        <option value="">Somnath Jadhav</option>
+    </select>
+    <br>
+    <br>
+    <label for="subdivision">Select Subdivision</label>
+    <select name="subdivision" id="subdivision">
+        <option value="">Select</option>
+        <option value="">Lunamar</option>
+        <option value="">Supertech</option>
+        <option value="">Gaur</option>
+    </select>
+    <br>
+    <br>
               <button type='submit'class='submit-btn'>Submit</button>
      </form>
       </div>
@@ -56,16 +82,20 @@
     <center>
 <table>
     <tr>
-      <th>Name</th>
-      <th>Floors</th>
-      <th>Total Apartments</th>
+      <th>Garden Name</th>
+      <th>Opening Hours</th>
+      <th>Closing Hours</th>
+      <th>Gardener</th>
+      <th>Subdivision</th>
       <th>Actions</th>
       <!-- <th>Delete</th> -->
     </tr>
     <tr>
       <td>Alfreds Futterkiste</td>
-      <td>23</td>
-      <td>23</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Sayali Deshmukh</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -73,8 +103,10 @@
     </tr>
     <tr>
       <td>Centro comercial Moctezuma</td>
-      <td>43</td>
-      <td>64</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Rohit Padwal</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -82,8 +114,10 @@
     </tr>
     <tr>
       <td>Ernst Handel</td>
-      <td>53</td>
-      <td>344</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Somnath Jadhav</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -91,8 +125,10 @@
     </tr>
     <tr>
       <td>Island Trading</td>
-      <td>45</td>
-      <td>466</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Rohit Padwal</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -100,8 +136,10 @@
     </tr>
     <tr>
       <td>Laughing Bacchus Winecellars</td>
-      <td>54</td>
-      <td>466</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Sayali Deshmukh</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -109,8 +147,10 @@
     </tr>
     <tr>
       <td>Magazzini Alimentari Riuniti</td>
-      <td>53</td>
-      <td>465</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Somnath Jadhav</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>

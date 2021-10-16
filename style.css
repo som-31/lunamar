@@ -209,19 +209,6 @@ textarea{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .full-page
 {
     height: 100%;
@@ -426,3 +413,19 @@ span
     width: 20em;  height: 2em;
 
 }
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
