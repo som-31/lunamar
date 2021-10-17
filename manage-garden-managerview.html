@@ -16,12 +16,19 @@
         <ul id='MenuItems'>
             <li><a href='home.html'>Home</a></li>
             <li><a href='aboutus.html'>About Us</a></li>
-            <li><a href='service.html '>Services</a></li>
+            <li><a href='services-information.html'>Services</a></li>
             <li><a href='contact.html'>Contact</a></li>
             <li><a href='login.html'>Login</a></li>
             <li><a href='employee.html'>Employee</a></li>
         </ul>
     </nav>
+</div>
+<div class="sidebar">
+  <a class="active" href="manage-building.html">Manage Building</a>
+  <a href='manage-resident.html'>Manage Resident</a>
+  <a href='manage-service.html'>Manage Service</a>
+  <a href='manage-visitor.html'>Manage Visitor</a>
+  <a href='manage-amenities.html'>Manage Amenities</a>
 </div>
     <div id='login-form'class='login-page'>
       <div class="form-box">
@@ -40,125 +47,118 @@
    <!-- <h2></h2> -->
    <div class="login-registering">
       <center>
-          <h1>Manage Incidentss</h1>
+          <h1>Manage Gardens</h1>
           <!-- <p>Login to see your dashboard.</p> -->
       </center>
    </div>
 <form id='register' class='input-group-register'>
-   
-    <input type='text'class='input-field'placeholder='Incident Name' required>
-    <input type='text'class='input-field'placeholder='Visitor Name' required>
+   <input type='text'class='input-field'placeholder='Garden Name' required>
     <br>
     <br>
-    <textarea placeholder="Description" class="field" style="border: 1px solid black;"></textarea>
-    <input type='text'class='input-field'placeholder='Visiting Apartment Id' required>
+    <p>Opening Hours</p>
+    <input type="time" class='input-field' required name="" id="opening_hours">
     <br>
     <br>
-    <label for="">Select Visitor</label>
-    <select name="" id="">
+    <label for="closing_hours">Closing Hours</label>
+    <input type="time" class='input-field' required name="" id="closing_hours">
+    <br>
+    <br>
+    <label for="gardener">Select Gardener</label>
+    <select name="gardener" id="gardener">
+        <option value="">Select</option>
+        <option value="">Michael Kors</option>
+        <option value="">Rohit padwal</option>
         <option value="">Sayali Deshmukh</option>
         <option value="">Somnath Jadhav</option>
-        <option value="">Rohit Padwal</option>
-        <option value="">Michael Kors</option>
-        <option value="">Ernst Handel</option>
-        <option value="">Island Trading</option>
     </select>
     <br>
     <br>
- <!-- <input type='number'class='input-field'placeholder='Visitor Id' required> -->
- 
- 
-
-<div>
-    <label for="">Incident At:</label>
-    <input type="time" name="" id="" placeholder="incident_at" class="input-field">    
-</div>
-    <button type='submit'class='submit-btn'>Submit</button>
+    <label for="subdivision">Select Subdivision</label>
+    <select name="subdivision" id="subdivision">
+        <option value="">Select</option>
+        <option value="">Lunamar</option>
+        <option value="">Supertech</option>
+        <option value="">Gaur</option>
+    </select>
+    <br>
+    <br>
+              <button type='submit'class='submit-btn'>Submit</button>
      </form>
       </div>
   </div>
-     </div>
- </div>
-  <center>
-    <table>
-        <tr>
-          <th>Incident Name</th>
-          <th>Visitor Name</th>
-          <th>Visiting Apartment Id</th>
-          <th>Incident At</th>
-          <th>Description</th>
-            <th>Actions</th>
-         </tr>
+    <center>
+<table>
     <tr>
-      <td>Verbal Abuse</td>
+      <th>Garden Name</th>
+      <th>Opening Hours</th>
+      <th>Closing Hours</th>
+      <th>Gardener</th>
+      <th>Subdivision</th>
+      <th>Actions</th>
+      <!-- <th>Delete</th> -->
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
       <td>Sayali Deshmukh</td>
-      
-      <td>12</td>
-      <td>11:20 PM</td>
-      <td>fsdfsdfdsfffcfsfff</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-        <td>Harrassment</td>
-        <td>Somnath Jadhav</td>
-        
-        <td>13</td>
-        <td>1:20 PM</td>
-        <td>fsdfsdfdsfffcfsfff</td>
-      
-    
+      <td>Centro comercial Moctezuma</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Rohit Padwal</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-        <td>murder</td>
-        <td>Rohit Padwal</td>
-      
-        <td>13</td>
-        <td>5:20 PM</td>
-        <td>fsdfsdfdsfffcfsfff</td>
-      <td>
-        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
-      <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
-    </td>
-    </tr>
-    <tr>
-        <td>Roberry</td>
-        <td>Michael Kors</td>
-        
-        <td>20</td>
-        <td>6:00 AM</td>
-        <td>fsdfsdfdsfffcfsfff</td>
-      <td>
-        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
-      <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
-    </td>
-    </tr>
-    <tr>
-      <td>Roberry</td>
       <td>Ernst Handel</td>
-      
-      <td>34</td>
-      <td>6:30 PM</td>
-      <td>fsdfsdfdsfffcfsfff</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Somnath Jadhav</td>
+      <td>Lunamar</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-        <td>Roberry</td>
-        <td>Island Trading</td>
-      
-        <td>3</td>
-        <td>10:00 PM</td>
-        <td>fsdfsdfdsfffcfsfff</td>
-    <td>
+      <td>Island Trading</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Rohit Padwal</td>
+      <td>Lunamar</td>
+      <td>
+        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
+      <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
+    </td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Sayali Deshmukh</td>
+      <td>Lunamar</td>
+      <td>
+        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
+      <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
+    </td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>06:00 AM</td>
+      <td>11:00 PM</td>
+      <td>Somnath Jadhav</td>
+      <td>Lunamar</td>
+      <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
