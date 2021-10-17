@@ -16,7 +16,7 @@
         <ul id='MenuItems'>
             <li><a href='home.html'>Home</a></li>
             <li><a href='aboutus.html'>About Us</a></li>
-            <li><a href='service.html '>Services</a></li>
+            <li><a href='services-information.html'>Services</a></li>
             <li><a href='contact.html'>Contact</a></li>
             <li><a href='login.html'>Login</a></li>
             <li><a href='employee.html'>Employee</a></li>
@@ -24,11 +24,13 @@
     </nav>
 </div>
 <div class="sidebar">
-  <a class="active" href="manage-building.html">Manage Building</a>
-  <a href='manage-resident.html'>Manage Resident</a>
-  <a href='manage-service.html'>Manage Service</a>
-  <a href='manage-visitor.html'>Manage Visitor</a>
-  <a href='manage-amenities.html'>Manage Amenities</a>
+    
+  <a href='enabled-services-resident.html'>Manage Service</a>
+  <a href='manage-visitor-residentview.html'>Manage Visitor</a>
+  <a href='upload-pic-video-resident.html'>Upload picture and Video </a>
+
+  <a href='chat-resident.html'>Chat</a>
+
 </div>
     <div id='login-form'class='login-page'>
       <div class="form-box">
@@ -47,79 +49,114 @@
    <!-- <h2></h2> -->
    <div class="login-registering">
       <center>
-          <h1>Manage Buildings</h1>
+          <h1>Enable Services</h1>
           <!-- <p>Login to see your dashboard.</p> -->
       </center>
    </div>
-<form id='register' class='input-group-register'>
-   <input type='text'class='input-field'placeholder='Name' required>
-   <input type="number" class='input-field' placeholder='Floors' required>
-   <input type='number'class='input-field'placeholder='Total Apartments' required>
-   <input type="number" class="input-field" placeholder="Occupancy" required>
-              <button type='submit'class='submit-btn'>Submit</button>
+<br>
+<br>
+   <form id='register' class='input-group-register'>
+    <label for="">buildings</label>
+    <select name="" name="">
+        <option selected value="">Gold Star</option>
+        <option value="">Creekside</option>
+        <option value="">RealBond Realty</option>
+        <option value="">Merril Willow</option>
+       
+    </select> 
+    <br>
+    <br>
+    <br>
+    <label for="">Apartment Id</label>
+    <select name="" id="">
+        <option selected value="">01</option>
+        <option value="">02</option>
+        <option value="">03</option>
+       
+    </select> 
+    <br>
+    <br>
+    <label for="">Update Services</label>
+    <select name="" id="" multiple>
+        <option value="">Gas</option>
+        <option value="">Wifi</option>
+        <option value="" selected>Electricity</option>
+        <option value="" selected>Water</option>
+       
+    </select>
+    <br>
+    <br>
+ <!-- <input type='number'class='input-field'placeholder='Visitor Id' required> -->
+ 
+ 
+
+
+    <button type='submit'class='submit-btn'>Submit</button>
      </form>
       </div>
   </div>
-    <center>
-<table>
+     </div>
+ </div>
+  <center>
+    <table>
+        <tr>
+          <th>Apartment Id</th>
+          <th>Building Name</th>
+          <th>Registered Services</th>
+          <th>Actions</th>
+         </tr>
     <tr>
-      <th>Name</th>
-      <th>Floors</th>
-      <th>Total Apartments</th>
-      <th>Actions</th>
-      <!-- <th>Delete</th> -->
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>23</td>
-      <td>23</td>
+      <td>01</td>
+      <td>Creekside</td>
+      <td>Water</td>
       <td>
-        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
+       
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>43</td>
-      <td>64</td>
+        <td>02</td>
+        <td>RealBond Realty</td>
+      <td>gas</td>
       <td>
-        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
+     
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Ernst Handel</td>
-      <td>53</td>
-      <td>344</td>
+        <td>03</td>
+        <td>Merril Willow</td>
+      <td>Electricity</td>
       <td>
-        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
+     
+       
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Island Trading</td>
-      <td>45</td>
-      <td>466</td>
+        <td>04</td>
+        <td>RealBond Realty</td>
+      <td>Water</td>
       <td>
-        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
+      
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Laughing Bacchus Winecellars</td>
-      <td>54</td>
-      <td>466</td>
-      <td>
-        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
+        <td>05</td>
+        <td>Creekside</td>
+        <td>Water</td>
+        <td>
+        
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Magazzini Alimentari Riuniti</td>
-      <td>53</td>
-      <td>465</td>
-      <td>
-        <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
+        <td>06</td>
+        <td>Merril Willow</td>
+        <td>Gas</td>
+        <td>
+       
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
