@@ -5,7 +5,31 @@
 
     <title>Lunamar</title>
     <link rel="stylesheet" href="style.css">
-    <!---we had linked our css file----->
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  <script type="text/javascript">
+    function sendEmail() {
+        alert('in here');
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "jadhav.deshmukh.padwal@gmail.com",
+        Password: "abc@12345678",
+        To: 'somnath3151995@gmail.com',
+        From: "some@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      }).then(function (message) {
+          alert("mail sent successfully")
+          console.log('Message is :', message);
+        }).catch(function (error){
+            alert('error');
+            console.log('in error');
+            console.log('error')
+        });
+    }
+  </script>
 </head>
 
 <body>
@@ -17,11 +41,11 @@
             <nav>
                 <ul id='MenuItems'>
                     <li><a href='home.html'>Home</a></li>
-                    <li><a href='#'>About Us</a></li>
+                    <li><a href='aboutus.html'>About Us</a></li>
                     <li><a href='service.html '>Services</a></li>
-                    <li><a href='#'>Contact</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
                     <li><a href='login.html'>Login</a></li>
-                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                    <!-- <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li> -->
                 </ul>
             </nav>
         </div>
@@ -46,7 +70,7 @@
                 <!-- <p>Login to see your dashboard.</p> -->
             </center>
          </div>
-		 <form id='register' class='input-group-register'>
+		 <form id='register' class='input-group-register' method="POST">
 		     <input type='text'class='input-field'placeholder='First Name' required>
 		     <input type='text'class='input-field'placeholder='Last Name ' required>
 		     <input type='email'class='input-field'placeholder='Email Id' required>
@@ -63,8 +87,9 @@
              <input type="radio" id="others" value="others">Others</input>
 		     <input type='password'class='input-field'placeholder='Enter Password' required>
 		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
-		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
-                    <button type='submit'class='submit-btn'>Register</button>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+             <input type="button" value="Submit" onclick="sendEmail()" class="submit-btn">
+                    <!-- <button type='submit'class='submit-btn' onclick="sendEmail()">Register</button> -->
 	         </form>
             </div>
         </div>
