@@ -5,7 +5,27 @@
 
     <title>Lunamar</title>
     <link rel="stylesheet" href="style.css">
-    <!---we had linked our css file----->
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  <script type="text/javascript">
+    function sendEmail() {
+        var toEmail = document.getElementById('email');
+        var password = document.getElementById('password');
+      Email.send({
+        SecureToken : "e09cb61c-aaec-4ff7-bc86-39326d58e744",
+        To : toEmail.value,
+        From : "jadhav.deshmukh.padwal@gmail.com",
+        Subject : "Login Credentials",
+        Body : `<p>Please find the below credentials for login</p>
+                <p>Username: ${toEmail.value}</p>
+                <p>Password: ${password.value}</p>`
+      }).then(function (message) {
+          alert("mail sent successfully")
+        })
+    }
+  </script>
 </head>
 
 <body>
@@ -17,11 +37,11 @@
             <nav>
                 <ul id='MenuItems'>
                     <li><a href='home.html'>Home</a></li>
-                    <li><a href='#'>About Us</a></li>
+                    <li><a href='aboutus.html'>About Us</a></li>
                     <li><a href='services-information.html'>Services</a></li>
-                    <li><a href='#'>Contact</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
                     <li><a href='login.html'>Login</a></li>
-                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                    <li><a href='employee.html'>Employee</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,27 +49,16 @@
             <div class="form-box">
                 <div class='button-box'>
                      <div id='btn'></div>
-                    <!-- <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
-                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>  -->
                 </div>
-                <!-- <form id='login' class='input-group-login'>
-                    <input type='text'class='input-field'placeholder='Email Id' required >
-		    <input type='password'class='input-field'placeholder='Enter Password' required>
-		    <input type='checkbox'class='check-box'><span>Remember Password</span>
-		    <button type='submit'class='submit-btn'>Log in</button>
-		 </form> -->
-         <!-- <span>Want to be part of us. Then <a href="register.html">Register</a> here.</span> -->
-         <!-- <h2></h2> -->
          <div class="login-registering">
             <center>
                 <h1>Register</h1>
-                <!-- <p>Login to see your dashboard.</p> -->
             </center>
          </div>
-		 <form id='register' class='input-group-register'>
+		 <form id='register' class='input-group-register' method="POST">
 		     <input type='text'class='input-field'placeholder='First Name' required>
 		     <input type='text'class='input-field'placeholder='Last Name ' required>
-		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='email'class='input-field'placeholder='Email Id' id="email" required>
              <input type="text" class="input-field" placeholder="Phone" required>
              <br>
              <br>
@@ -62,40 +71,12 @@
              <input type="radio" id="female" value="female">Female</input>
              <input type="radio" id="others" value="others">Others</input>
 		     <input type='password'class='input-field'placeholder='Enter Password' required>
-		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
-		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
-                    <button type='submit'class='submit-btn'>Register</button>
+		     <input type='password'class='input-field'placeholder='Confirm Password' id="password" required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+             <input type="button" value="Submit" onclick="sendEmail()" class="submit-btn">
 	         </form>
             </div>
         </div>
     </div>
-    <script>
-        // var x=document.getElementById('login');
-		// var y=document.getElementById('register');
-		// var z=document.getElementById('btn');
-		// function register()
-		// {
-        //     alert('hey there');
-		// 	x.style.left='-400px';
-		// 	y.style.left='50px';
-		// 	z.style.left='110px';
-		// }
-		// function login()
-		// {
-		// 	x.style.left='50px';
-		// 	y.style.left='450px';
-		// 	z.style.left='0px';
-		// }
-	</script>
-	<script>
-        var modal = document.getElementById('login-form');
-        window.onclick = function(event) 
-        {
-            if (event.target == modal) 
-            {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
