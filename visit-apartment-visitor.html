@@ -30,11 +30,10 @@
    
 </div>
 <div class="sidebar">
-    <a href="manage-building.html">Manage Building</a>
-    <a href='manage-resident.html'>Manage Resident</a>
-    <a href='manage-service.html'>Manage Service</a>
-    <a href='manage-visitor.html'>Manage Visitor</a>
-    <a href='manage-amenities.html'>Manage Amenities</a>
+  <a href="visit-apartment-visitor.html">Visit Apartment</a>
+  <a href='visit-garden-visitor.html'>Visit Garden</a>
+  <a href='chat-visitor.html'>Chat</a>
+
 </div>
     <div id='login-form'class='login-page'>
       <div class="form-box">
@@ -53,7 +52,7 @@
    <!-- <h2></h2> -->
    <div class="login-registering">
       <center>
-          <h1>Request Visit Garden</h1>
+          <h1>Request Visit Apartment</h1>
           <!-- <p>Login to see your dashboard.</p> -->
       </center>
    </div>
@@ -62,10 +61,7 @@
     <input type='text'class='input-field'placeholder='First Name' required>
     <input type='text'class='input-field'placeholder='Last Name' required>
     <!-- <input type='number'class='input-field'placeholder='Visitor Id' required> -->
-    <input type='text'class='input-field'placeholder='Visiting Garden Name' required>
-    
-   
-    
+    <input type='text'class='input-field'placeholder='Visiting Apartment Id' required>
  <input type='text'class='input-field'placeholder='Address' required>
  <input type='text'class='input-field'placeholder='State' required>
  <input type='text'class='input-field'placeholder='City' required>
@@ -84,18 +80,19 @@
     <table>
         <tr>
           <th>Visitor</th>
-          <th>Visiting Garden Name</th>
+          <th>Visiting Apartment Id</th>
           <th>Entry At</th>
           <th>Exit At</th>
+          <th>Approval</th>
           <th>Actions</th>
           <!-- <th>Delete</th> -->
         </tr>
     <tr>
       <td>Michael Kors</td>
-      <td>Earth Angels</td>
+      <td>12</td>
       <td>7:30 AM</td>
       <td>11:20 PM</td>
-      
+      <td>Pending</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -103,9 +100,12 @@
     </tr>
     <tr>
       <td>Rohit padwal</td>
-      <td>Flower Dome3</td>
+      <td>13</td>
       <td>8:30 AM</td>
       <td>11:20 PM</td>
+      <td>Pending</td>
+      
+    
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -113,10 +113,11 @@
     </tr>
     <tr>
       <td>Ernst Handel</td>
-      <td>Green Solutions</td>
+      <td>14</td>
       <td>05:00 PM</td>
       <td>9:00 PM</td>
       
+      <td>Pending</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -124,10 +125,10 @@
     </tr>
     <tr>
       <td>Island Trading</td>
-      <td>Arbor Gardening</td>
+      <td>15</td>
       <td>09:00 AM</td>
       <td>4:00 PM</td>
-   
+   <td>Pending</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -135,10 +136,10 @@
     </tr>
     <tr>
       <td>Sayali Deshmukh</td>
-      <td>Nature Sharp</td>
+      <td>16</td>
       <td>7:30 AM</td>
       <td>12:00 PM</td>
-      
+      <td>Pending</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -146,9 +147,11 @@
     </tr>
     <tr>
       <td>Somnath Jadhav</td>
-      <td>Nature Captured7</td>
+      <td>17</td>
       <td>09:00 AM</td>
       <td>1:00 PM</td>
+      
+      <td>Pending</td>
     <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>

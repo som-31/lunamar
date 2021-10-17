@@ -16,25 +16,21 @@
         <ul id='MenuItems'>
             <li><a href='home.html'>Home</a></li>
             <li><a href='aboutus.html'>About Us</a></li>
-            <li><a href='service.html '>Services</a></li>
+            <li><a href='services-information.html'>Services</a></li>
             <li><a href='contact.html'>Contact</a></li>
             <li><a href='login.html'>Login</a></li>
             <li><a href='employee.html'>Employee</a></li>
         </ul>
     </nav>
 </div>
-<div>
-    <!-- Under this div we need add : -->
-    <!-- 1 background image for the below heading Services -->
-    <!-- 2 Content for each of the service -->
-   
-</div>
 <div class="sidebar">
-    <a href="manage-building.html">Manage Building</a>
-    <a href='manage-resident.html'>Manage Resident</a>
-    <a href='manage-service.html'>Manage Service</a>
-    <a href='manage-visitor.html'>Manage Visitor</a>
-    <a href='manage-amenities.html'>Manage Amenities</a>
+  <a href="manage-building-managerview.html">Manage Building</a>
+  <a href='manage-resident-managerview.html'>Manage Resident</a>
+  <a href='manage-service-managerview.html'>Manage Service</a>
+  <a href='manage-visitor-managerview.html'>Manage Visitor</a>
+  <a href='manage-amenities-managerview.html'>Manage Amenities</a>
+  <a href='chat-manager.html'>Chat</a>
+
 </div>
     <div id='login-form'class='login-page'>
       <div class="form-box">
@@ -53,59 +49,41 @@
    <!-- <h2></h2> -->
    <div class="login-registering">
       <center>
-          <h1>Request Visit Garden</h1>
+          <h1>Manage Buildings</h1>
           <!-- <p>Login to see your dashboard.</p> -->
       </center>
    </div>
 <form id='register' class='input-group-register'>
-   
-    <input type='text'class='input-field'placeholder='First Name' required>
-    <input type='text'class='input-field'placeholder='Last Name' required>
-    <!-- <input type='number'class='input-field'placeholder='Visitor Id' required> -->
-    <input type='text'class='input-field'placeholder='Visiting Garden Name' required>
-    
-   
-    
- <input type='text'class='input-field'placeholder='Address' required>
- <input type='text'class='input-field'placeholder='State' required>
- <input type='text'class='input-field'placeholder='City' required>
- <label for="">Entry At</label>
-    <input type='time'class='input-field'placeholder='Entry At' required>
-    <label for="">Exit At</label>
-    <input type='time'class='input-field'placeholder='Exit At' required>
-    <input type='number'class='input-field'placeholder='Phone' required>
-    <input type="number" class='input-field' placeholder='Zip Code' required>
-
+   <input type='text'class='input-field'placeholder='Name' required>
+   <input type="number" class='input-field' placeholder='Floors' required>
+   <input type='number'class='input-field'placeholder='Total Apartments' required>
+   <input type="number" class="input-field" placeholder="Occupancy" required>
               <button type='submit'class='submit-btn'>Submit</button>
      </form>
       </div>
   </div>
-  <center>
-    <table>
-        <tr>
-          <th>Visitor</th>
-          <th>Visiting Garden Name</th>
-          <th>Entry At</th>
-          <th>Exit At</th>
-          <th>Actions</th>
-          <!-- <th>Delete</th> -->
-        </tr>
+    <center>
+<table>
     <tr>
-      <td>Michael Kors</td>
-      <td>Earth Angels</td>
-      <td>7:30 AM</td>
-      <td>11:20 PM</td>
-      
+      <th>Name</th>
+      <th>Floors</th>
+      <th>Total Apartments</th>
+      <th>Actions</th>
+      <!-- <th>Delete</th> -->
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>23</td>
+      <td>23</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Rohit padwal</td>
-      <td>Flower Dome3</td>
-      <td>8:30 AM</td>
-      <td>11:20 PM</td>
+      <td>Centro comercial Moctezuma</td>
+      <td>43</td>
+      <td>64</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -113,10 +91,8 @@
     </tr>
     <tr>
       <td>Ernst Handel</td>
-      <td>Green Solutions</td>
-      <td>05:00 PM</td>
-      <td>9:00 PM</td>
-      
+      <td>53</td>
+      <td>344</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
@@ -124,32 +100,27 @@
     </tr>
     <tr>
       <td>Island Trading</td>
-      <td>Arbor Gardening</td>
-      <td>09:00 AM</td>
-      <td>4:00 PM</td>
-   
+      <td>45</td>
+      <td>466</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Sayali Deshmukh</td>
-      <td>Nature Sharp</td>
-      <td>7:30 AM</td>
-      <td>12:00 PM</td>
-      
+      <td>Laughing Bacchus Winecellars</td>
+      <td>54</td>
+      <td>466</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Somnath Jadhav</td>
-      <td>Nature Captured7</td>
-      <td>09:00 AM</td>
-      <td>1:00 PM</td>
-    <td>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>53</td>
+      <td>465</td>
+      <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
