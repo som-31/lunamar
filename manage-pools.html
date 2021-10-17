@@ -23,21 +23,6 @@
         </ul>
     </nav>
 </div>
-<div>
-    <!-- Under this div we need add : -->
-    <!-- 1 background image for the below heading Services -->
-    <!-- 2 Content for each of the service -->
-    <h1 style="text-align:center;">
-        Services
-    </h1>
-</div>
-<div class="sidebar">
-    <a href="manage-building.html">Manage Building</a>
-    <a href='manage-resident.html'>Manage Resident</a>
-    <a href='manage-service.html'>Manage Service</a>
-    <a href='manage-visitor.html'>Manage Visitor</a>
-    <a href='manage-amenities.html'>Manage Amenities</a>
-</div>
     <div id='login-form'class='login-page'>
       <div class="form-box">
           <div class='button-box'>
@@ -55,113 +40,126 @@
    <!-- <h2></h2> -->
    <div class="login-registering">
       <center>
-          <h1>Manage Visitors</h1>
+          <h1>Manage Pools</h1>
           <!-- <p>Login to see your dashboard.</p> -->
       </center>
    </div>
 <form id='register' class='input-group-register'>
-   
-    <input type='text'class='input-field'placeholder='First Name' required>
-    <input type='text'class='input-field'placeholder='Last Name' required>
-    <!-- <input type='number'class='input-field'placeholder='Visitor Id' required> -->
-    <input type='text'class='input-field'placeholder='Visiting Apartment Id' required>
-    <label for="">Approval</label>
-    <select name="approval" id="approval">
-            <option value="">Select</option>
-            <option value="">Yes</option>
-            <option value="">No</option>
+    <br<>
+    <input type="number" class='input-field' placeholder='Pool Id' required>
+<br>
+<br>
+<label for="subdivision">Select Subdivision</label>
+    <select name="subdivision" id="subdivision">
+        <option value="">Select</option>
+        <option value="">Lunamar</option>
+        <option value="">Supertech</option>
+        <option value="">Gaur</option>
     </select>
- <input type='text'class='input-field'placeholder='Address' required>
- <input type='text'class='input-field'placeholder='State' required>
- <input type='text'class='input-field'placeholder='City' required>
- <label for="">Entry At</label>
-    <input type='time'class='input-field'placeholder='Entry At' required>
-    <label for="">Exit At</label>
-    <input type='time'class='input-field'placeholder='Exit At' required>
-    <input type='number'class='input-field'placeholder='Phone' required>
-    <input type="number" class='input-field' placeholder='Zip Code' required>
+    <br>
+   
+    <br>
+    <p>Opening Hours</p>
+    <input type="time" class='input-field' required name="" id="opening_hours">
+    <br>
+    <br>
+    <label for="closing_hours">Closing Hours</label>
+    <input type="time" class='input-field' required name="" id="closing_hours">
+    <br>
+    <br>
+    <p>Last Inspection At</p>
+    <input type="date" class='input-field' required name="" id="Last Inspection At">
+    <br>
+    <br>
+    <label for="Next_Ispection">Next Inspection At</label>
+    <input type="date" class='input-field' required name="" id="Next Inspection At">
+    <br>
+    
 
               <button type='submit'class='submit-btn'>Submit</button>
      </form>
       </div>
   </div>
-  <center>
-    <table>
-        <tr>
-          <th>Visitor</th>
-          <th>Vising Apartment Id</th>
-          <th>Entry At</th>
-          <th>Exit At</th>
-          <th>Approval</th>
-          <th>Actions</th>
-          <!-- <th>Delete</th> -->
-        </tr>
+    <center>
+<table>
     <tr>
-      <td>Michael Kors</td>
-      <td>12</td>
-      <td>7:30 AM</td>
-      <td>11:20 PM</td>
-      <td>Yes</td>
+      <th>Pool Id</th>
+      <th>Subdivision Name</th>
+      <th>Opening Hours</th>
+      <th>Closing Hours</th>
+      <th>Last Inspection At </th>
+      <th>Next Inspection At</th>
+       <th>Actions</th>
+      <!-- <th>Delete</th> -->
+    </tr>
+    <tr>
+        <td>01</td>
+      <td>Lunamar</td>
+      <td>5:00 AM</td>
+      <td>11:00 PM</td>
+     <td>01/10/2021</td>
+     <td>10/10/2021</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Rohit padwal</td>
-      <td>13</td>
-      <td>8:30 AM</td>
-      <td>11:20 PM</td>
-      <td>Yes</td>
-      
-    
+        <td> 02</td>
+        <td>Lunamar</td>
+        <td>9:00 AM</td>
+        <td>12:00 PM</td>
+       <td>02/10/2021</td>
+       <td>12/10/2021</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Ernst Handel</td>
-      <td>14</td>
-      <td>05:00 PM</td>
-      <td>9:00 PM</td>
-      
-      <td>No</td>
+        <td> 03</td>
+        <td>Lunamar</td>
+        <td>6:00 AM</td>
+        <td>9:00 AM</td>
+       <td>03/10/2021</td>
+       <td>13/10/2021</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Island Trading</td>
-      <td>15</td>
-      <td>09:00 AM</td>
-      <td>4:00 PM</td>
-   <td>Yes</td>
+        <td> 04</td>
+        <td>Lunamar</td>
+        <td>5:30 AM</td>
+        <td>1:00 PM</td>
+       <td>04/10/2021</td>
+       <td>14/10/2021</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Sayali Deshmukh</td>
-      <td>16</td>
-      <td>7:30 AM</td>
-      <td>12:00 PM</td>
-      <td>Yes</td>
+        <td> 05</td>
+        <td>Lunamar</td>
+        <td>4:00 AM</td>
+        <td>11:00 AM</td>
+       <td>05/10/2021</td>
+       <td>15/10/2021</td>
       <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
     </tr>
     <tr>
-      <td>Somnath Jadhav</td>
-      <td>17</td>
-      <td>09:00 AM</td>
-      <td>1:00 PM</td>
-      
-      <td>Yes</td>
-    <td>
+       <td> 06</td>
+        <td>Lunamar</td>
+        <td>6:00 AM</td>
+        <td>11:00 PM</td>
+       <td>06/10/2021</td>
+       <td>16/10/2021</td>
+      <td>
         <button><img src="assets/icons/pencil.png" alt="edit image" width="20" height="20"></button>
       <button><img src="assets/icons/trash.png" alt="Delete image" width="20" height="20"></button>
     </td>
