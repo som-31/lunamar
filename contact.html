@@ -6,6 +6,28 @@
     </centre>
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  <script type="text/javascript">
+    function sendEmail() {
+        var name = document.getElementById('name');
+        var email = document.getElementById('email');
+        var query = document.getElementById('query');
+      Email.send({
+        SecureToken : "e09cb61c-aaec-4ff7-bc86-39326d58e744",
+        To : 'jadhav.deshmukh.padwal@gmail.com',
+        From : "jadhav.deshmukh.padwal@gmail.com",
+        Subject : "Query",
+        Body : `Hello Admin,
+                     Below is the query from ${name.value}:
+                     <p>${query.value}</p>`
+      }).then(function (message) {
+          alert("mail sent successfully")
+        })
+    }
+  </script>
 	
 </head>
 <body>
@@ -29,12 +51,14 @@
 			<div class="left"></div>
 			<div class="right">
                 <center><h2>Contact Us</h2></center>
-				<input type="text" class="field" placeholder="Your Name">
-				<input type="text" class="field" placeholder="Your Email">
-				<input type="text" class="field" placeholder="Phone">
-               
-				<textarea placeholder="Query" class="field"></textarea>
-				<button class="btn">Send</button>
+                <form action="" id="register" method="post">
+                    <input type="text" class="field" id="name" placeholder="Your Name">
+                    <input type="text" class="field" id="email" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Phone">
+                    <textarea placeholder="Query" id="query" class="field"></textarea>
+                    <input type="button" value="Submit" onclick="sendEmail()" class="submit-btn">
+                    <!-- <button class="btn" onclick="sendEmail()">Send</button> -->
+                </form>
 			</div>
 		</div>
 	</div>
