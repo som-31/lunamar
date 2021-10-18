@@ -235,7 +235,7 @@ textarea{
 	position: absolute;
     /* color: green; */
 }
-.navbar
+/* .navbar
 {
 background-color: #002d62	;
    color:rgb(102, 0, 128);
@@ -246,6 +246,17 @@ background-color: #002d62	;
     padding-right: 30px;
     padding-top: 50px;
 	
+} */
+.navbar {
+    width: 100%;
+    background-color: #002d62;
+    color: rgb(102, 0, 128);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 59px;
+    padding-top: 10px;
 }
 nav
 {
@@ -254,7 +265,7 @@ nav
 }
 nav ul 
 {
-    display: inline-block;
+    display: flex;
     list-style: none;
 }
 nav ul li
@@ -281,7 +292,8 @@ nav ul li button
 }
 nav ul li button:hover
 {
-    color: aqua;
+    color: rgba(247,191,80,255)
+	;
 }
 nav ul li a:hover
 {
@@ -290,7 +302,7 @@ nav ul li a:hover
 a
 {
     text-decoration: none;
-    color: palevioletred;
+    color: rgb(0, 0, 0);
     font-size: 28px;
 }
 #login-form
@@ -404,11 +416,13 @@ span
 }
 
 .service-sub-block{
-    background-color: purple;
+    background-color: rgba(247,191,80,255)	;
     width: 30%;    
     float:left;
     margin:10px;
     border-radius:5px;
+	margin-top: 5%;
+	margin-left: 15%;
 }
 .service-sub-block-header{
     padding: 10px;
@@ -418,7 +432,7 @@ span
 }
 .service-sub-block-text{
 	padding: 10px;
-	background-color:rgb(211, 191, 191);
+	background-color:rgb(3, 0, 0);
     font-weight:bold;
     text-align:center;
 }
@@ -463,6 +477,7 @@ table {
 	color: black;
 	padding: 16px;
 	text-decoration: none;
+	font-size:x-large
   }
    
   .sidebar a.active {
