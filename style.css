@@ -37,7 +37,22 @@ body{
 	background-color: lightyellow;
 	
 }
+.logo {
+	float: left;
+}
+.logo img {
+	width: 10%;
+	padding: 10px 0;
+}
 
+.background {
+	background: linear-gradient(white), rgba(0, 0, 0, 0.8));
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
 {
 	margin:0px;
 	padding:0px;
@@ -57,23 +72,24 @@ body{
 }
 .content-section{
 	float: left;
-	width: 55%;
+
+	width: 50%;
 }
 .image-section{
 	float: right;
-	width: 40%;
+	width: 50%;
 }
 .image-section img{
 	width: 100%;
-	height: 65;
+	height: 50;
 }
 .content-section .title{
 	text-transform: uppercase;
 	font-size: 28px;
 }
 .content-section .content h3{
-	margin-top: 20px;
-	color:#5d5d5d;
+	margin-top: 10px;
+	color:black;
 	font-size: 21px;
 }
 .content-section .content p{
@@ -389,9 +405,9 @@ span
 
 .service-sub-block{
     background-color: purple;
-    width: 30%;    
-    float:left;
-    margin:10px;
+    width: 60%;    
+    float: left;
+    margin:20px;
     border-radius:5px;
 }
 .service-sub-block-header{
