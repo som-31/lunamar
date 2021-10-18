@@ -46,19 +46,19 @@ body{
 }
 
 .background {
-	background: linear-gradient(white), rgba(0, 0, 0, 0.8));
+	background: linear-gradient(white), rgba(0, 0, 0, 0.8);
 	height: 100vh;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 }
-{
+/* {
 	margin:0px;
 	padding:0px;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
-}
+} */
 .section{
 	width: 100%;
 	min-height: 100vh;
