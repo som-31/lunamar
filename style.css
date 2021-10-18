@@ -245,6 +245,7 @@ background-color: #002d62	;
     padding-left: 50px;
     padding-right: 30px;
     padding-top: 50px;
+	
 }
 nav
 {
@@ -452,7 +453,7 @@ table {
 	padding: 0;
 	width: 200px;
 	background-color: #f1f1f1;
-	position: fixed;
+	position:fixed;
 	height: 100%;
 	overflow: auto;
   }
@@ -576,3 +577,7 @@ input,
 label {
     margin: .4rem 0;
 }
+
+
+
+
