@@ -31,10 +31,10 @@ body{
 	height:600px;
 	position:relative;
 	margin:2% auto;
-	background: lightyellow;
+	background: #f8f890;
 	padding:10px;
     overflow: hidden;
-	background-color: lightyellow;
+	background-color: #f8f890;
 	
 }
 .logo {
@@ -315,7 +315,7 @@ a
 	height:600px;
 	position:relative;
 	margin:2% auto;
-	background: lightyellow;
+	background: #f8f890;
 	padding:10px;
     /* overflow: hidden; */
 }
@@ -598,6 +598,23 @@ table{
 	margin-left: 140px;
 }
 
+.background-image{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+  .imgcontainer {
+	position: relative;
+	text-align: center;
+	color: white;
+  }
 
 
 
